@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+          <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="navbar"></div>
+<script>
+  fetch("navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script>
+
+<div class="relative w-full h-48 sm:h-56 flex items-center justify-between px-8 md:px-20 overflow-hidden shadow-lg">
+  
+  <img 
+    src="/src/about.jpeg" 
+    alt="Banner Background" 
+    class="absolute inset-0 w-full h-full object-cover z-0"
+  />
+</div>
+
+ <section class="container mx-auto px-4 py-12 lg:px-20">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+    
+    <div class="space-y-6">
+      <div class="inline-block border-b-2 border-red-800 pb-1">
+        <h2 class="text-xl font-bold text-red-900">Welcome To J. J. Patel & Co.</h2>
+      </div>
+      
+      <div class="text-gray-700 leading-relaxed space-y-4 text-justify text-[11px] ">
+        <p>
+          J. J. PATEL & CO. Is A Leading National Intellectual Property & Corporate Law Consultancy Firm Located At Rajkot City In Gujarat State Of India. J. J. PATEL & CO. Is Specialized And Dedicated To Protecting The Ideas And Innovations. J. J. PATEL & CO. Provides Their Professional Services To Private And Public Businesses For Their Intellectual Property And Corporate Commercial Law Matter In India.
+        </p>
+        <p>
+          Our Consultancy Includes All Aspects Of Trademark, Copyright, Patent, Design Patent, ISO, CE, ISI, FSSAI, Barcode And Trademark Litigation Work.
+        </p>
+        <p>
+          J. J. PATEL & CO. Always Be Consciously Helpful In Litigation In Various Courts Or Tribunals Or Other Legal Forum And Obviously Helpful To Take Care Of Our Clients Esteemed Intellectual Properties In India.
+        </p>
+      </div>
+    </div>
+
+    <div class="relative group">
+      <div class="overflow-hidden rounded-lg shadow-lg border border-gray-200">
+        <div id="imageSlider" class="flex transition-transform duration-500 ease-in-out">
+          <img src="/src/swaminarayan.jpeg" class="min-w-full h-[400px] object-cover" alt="Temple 1">
+          <img src="/src/office001.jpg" class="min-w-full h-[400px] object-cover" alt="Temple 2">
+          <img src="/src/office002.jpg" class="min-w-full h-[400px] object-cover" alt="Temple 3">
+        </div>
+      </div>
+
+      <button onclick="prevImg()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/60 text-white p-2 rounded-full transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <button onclick="nextImg()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/60 text-white p-2 rounded-full transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      <div class="flex justify-center gap-2 mt-4">
+        <span class="img-dot w-2 h-2 rounded-full bg-red-800"></span>
+        <span class="img-dot w-2 h-2 rounded-full bg-gray-300"></span>
+        <span class="img-dot w-2 h-2 rounded-full bg-gray-300"></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="max-w-6xl mx-auto py-12 px-6">
+
+  <div class="grid md:grid-cols-3 gap-10">
+
+    <!-- Card 1 -->
+    <div>
+      <img src="/src/a_we.jpg" class="w-full h-40 object-cover mb-4">
+
+      <h3 class="font-semibold text-gray-800 underline mb-2">
+        Our Experience
+      </h3>
+
+      <p class="text-sm text-gray-600 leading-6">
+        J.J. Patel And Co. Offers Both The Legal And Technical Insight Needed For Intellectual Property To Prosper And Grow. 
+        The Right Guidance About Your Brand Will Help You Solve Problems And Grow Your Business.
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div>
+      <img src="/src/a_oc.jpg" class="w-full h-40 object-cover mb-4">
+
+      <h3 class="font-semibold text-gray-800 underline mb-2">
+        Our Commitment
+      </h3>
+
+      <p class="text-sm text-gray-600 leading-6">
+        J. J. Patel And Co. Are Well Known For A Differentiated Service In Analyzing Trademark Information Which Makes It Possible 
+        To Formulate Strategies In Response To Everyone’s Needs And To Give Them Satisfactory Results.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div>
+      <img src="/src/a_cv.jpg" class="w-full h-40 object-cover mb-4">
+
+      <h3 class="font-semibold text-gray-800 underline mb-2">
+        Our Core Values
+      </h3>
+
+      <p class="text-sm text-gray-600 leading-6">
+        Excellence In The Practice Of Law Is Our Core Commitment. Our Business Is Professional But We Do Not Believe In Professionalism, 
+        We Are Constantly Working To Gain A Reputation For Legitimate Work While Keeping Our Legal Work True To Our Core Values.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto py-12 px-6">
+
+  <!-- Heading -->
+  <h2 class="text-lg font-semibold text-gray-800 border-b-2 border-red-500 inline-block mb-8">
+    Our Creative Team
+  </h2>
+
+  <!-- Grid -->
+  <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+    <!-- Card -->
+    <div class="bg-white border rounded shadow-sm p-3 text-center relative group">
+      <img src="/src/team01.jpg" class="w-full h-72 object-cover rounded">
+
+      <!-- Name -->
+      <div class="absolute bottom-14 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-4 py-1 font-semibold">
+        JIGNESH PATEL
+      </div>
+
+      <!-- Role -->
+      <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-xs px-4 py-1">
+        OWNER
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="bg-white border rounded shadow-sm p-3 text-center relative">
+      <img src="/src/team05.jpg" class="w-full h-72 object-cover rounded">
+
+     <div class="absolute bottom-14 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-4 py-1 font-semibold">
+        H. L. MAHIDA
+      </div>
+
+      <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-xs px-4 py-1">
+       ADVOCATE
+      </div>
+          </div>
+
+    <!-- Card -->
+    <div class="bg-white border rounded shadow-sm p-3 text-center relative">
+      <img src="/src/team03.jpg" class="w-full h-72 object-cover rounded">
+
+      <div class="absolute bottom-14 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-4 py-1 font-semibold">
+        SEJAL PATEL
+      </div>
+
+      <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-xs px-4 py-1">
+        GOV. FILLING DEP.
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="bg-white border rounded shadow-sm p-3 text-center relative">
+      <img src="/src/team03.jpg" class="w-full h-72 object-cover rounded">
+
+      <div class="absolute bottom-14 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-4 py-1 font-semibold">
+        J. K. PATEL
+      </div>
+
+      <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-xs px-4 py-1">
+        ACCOUNT DEP.
+      </div>
+    </div>
+
+    <!-- Extra row (optional) -->
+    <div class="bg-white border rounded shadow-sm p-3 text-center relative">
+      <img src="/src/team02.jpg" class="w-full h-72 object-cover rounded">
+
+      <div class="absolute bottom-14 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-4 py-1 font-semibold">
+        TEAM MEMBER
+      </div>
+
+      <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-xs px-4 py-1">
+        STAFF
+      </div>
+    </div>
+
+    <div class="bg-white border rounded shadow-sm p-3 text-center relative">
+      <img src="/src/team6.jpg" class="w-full h-72 object-cover rounded">
+
+      <div class="absolute bottom-14 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-4 py-1 font-semibold">
+        TEAM MEMBER
+      </div>
+
+      <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-xs px-4 py-1">
+        STAFF
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+<script>
+  let currentImgIndex = 0;
+  const imgSlider = document.getElementById('imageSlider');
+  const imgDots = document.querySelectorAll('.img-dot');
+  const totalImages = 3; // Jetli images hoy tetli sankhya
+
+  function updateImgSlider() {
+    imgSlider.style.transform = `translateX(-${currentImgIndex * 100}%)`;
+    
+    // Dots update
+    imgDots.forEach((dot, index) => {
+      dot.classList.toggle('bg-red-800', index === currentImgIndex);
+      dot.classList.toggle('bg-gray-300', index !== currentImgIndex);
+    });
+  }
+
+  function nextImg() {
+    currentImgIndex = (currentImgIndex + 1) % totalImages;
+    updateImgSlider();
+  }
+
+  function prevImg() {
+    currentImgIndex = (currentImgIndex - 1 + totalImages) % totalImages;
+    updateImgSlider();
+  }
+</script>
+
+</body>
+</html>

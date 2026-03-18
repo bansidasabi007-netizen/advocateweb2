@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+</head>
+<body>
+    <div id="navbar"></div>
+
+<script>
+  fetch("navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script>
+
+<div class="relative w-full h-48 sm:h-56 flex items-center justify-between px-8 md:px-20 overflow-hidden shadow-lg">
+  
+  <img 
+    src="/src/client.jpeg" 
+    alt="Banner Background" 
+    class="absolute inset-0 w-full h-full object-cover z-0"
+  />
+</div>
+
+<div class="max-w-7xl mx-auto p-8 bg-white">
+  
+  <div class="mb-6">
+    <h3 class="text-sm font-bold text-gray-700 tracking-wider uppercase inline-block border-b-2 border-red-500 pb-1">
+      Agriculture Product Field
+    </h3>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-0 border-l border-t border-gray-300">
+    
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/04.jpg" alt="Doctor Seeds" class="max-h-auto w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/05 (1).jpg" alt="Khedoot" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/026.jpg" alt="Maruti Trailer" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/allwyn.png" alt="Allwyn" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/hasty.jpg" alt="Hasty" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/030.jpg" alt="Maruti" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/neon.jpg" alt="Neon" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+
+
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto p-8 bg-white">
+  
+  <div class="mb-6">
+    <h3 class="text-sm font-bold text-gray-700 tracking-wider uppercase inline-block border-b-2 border-red-500 pb-1">
+
+MEDICAL PRODUCT FIELD
+    </h3>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-0 border-l border-t border-gray-300">
+    
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/rotec.jpg" alt="Doctor Seeds" class="max-h-auto w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/03 (1).jpg" alt="Khedoot" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/bhoomi agro.jpg" alt="Maruti Trailer" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/021.jpg" alt="Allwyn" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/024.jpg" alt="Hasty" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/gold star.jpg" alt="Maruti" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/bollero.jpg" alt="Neon" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+  </div>
+</div>
+
+
+
+<div class="max-w-7xl mx-auto p-8 bg-white">
+  
+  <div class="mb-6">
+    <h3 class="text-sm font-bold text-gray-700 tracking-wider uppercase inline-block border-b-2 border-red-500 pb-1">
+
+HYGIENE PRODUCTS FIELD
+    </h3>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-0 border-l border-t border-gray-300">
+    
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/04.jpg" alt="Doctor Seeds" class="max-h-auto w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/05 (1).jpg" alt="Khedoot" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/026.jpg" alt="Maruti Trailer" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/allwyn.png" alt="Allwyn" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/hasty.jpg" alt="Hasty" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/030.jpg" alt="Maruti" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/neon.jpg" alt="Neon" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+  </div>
+</div>
+
+
+<div class="max-w-7xl mx-auto p-8 bg-white">
+  
+  <div class="mb-6">
+    <h3 class="text-sm font-bold text-gray-700 tracking-wider uppercase inline-block border-b-2 border-red-500 pb-1">
+CERAMIC PRODUCT FIELD
+    </h3>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-0 border-l border-t border-gray-300">
+    
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/rotec.jpg" alt="Doctor Seeds" class="max-h-auto w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/03 (1).jpg" alt="Khedoot" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/bhoomi agro.jpg" alt="Maruti Trailer" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/021.jpg" alt="Allwyn" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/024.jpg" alt="Hasty" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/gold star.jpg" alt="Maruti" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/bollero.jpg" alt="Neon" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto p-8 bg-white">
+  
+  <div class="mb-6">
+    <h3 class="text-sm font-bold text-gray-700 tracking-wider uppercase inline-block border-b-2 border-red-500 pb-1">
+KITCHENWARE PRODUCT FIELD
+    </h3>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-0 border-l border-t border-gray-300">
+    
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/04.jpg" alt="Doctor Seeds" class="max-h-auto w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/05 (1).jpg" alt="Khedoot" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/026.jpg" alt="Maruti Trailer" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/allwyn.png" alt="Allwyn" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/hasty.jpg" alt="Hasty" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/030.jpg" alt="Maruti" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/neon.jpg" alt="Neon" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+  </div>
+</div>
+
+
+<div class="max-w-7xl mx-auto p-8 bg-white">
+  
+  <div class="mb-6">
+    <h3 class="text-sm font-bold text-gray-700 tracking-wider uppercase inline-block border-b-2 border-red-500 pb-1">
+
+
+HARDWARE PRODUCT FIELD
+    </h3>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-0 border-l border-t border-gray-300">
+    
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/rotec.jpg" alt="Doctor Seeds" class="max-h-auto w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/03 (1).jpg" alt="Khedoot" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/bhoomi agro.jpg" alt="Maruti Trailer" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/021.jpg" alt="Allwyn" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/024.jpg" alt="Hasty" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/gold star.jpg" alt="Maruti" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/bollero.jpg" alt="Neon" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto p-8 bg-white">
+  
+  <div class="mb-6">
+    <h3 class="text-sm font-bold text-gray-700 tracking-wider uppercase inline-block border-b-2 border-red-500 pb-1">
+FMCG PRODUCTS FIELD    </h3>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-0 border-l border-t border-gray-300">
+    
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/04.jpg" alt="Doctor Seeds" class="max-h-auto w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/05 (1).jpg" alt="Khedoot" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/026.jpg" alt="Maruti Trailer" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/allwyn.png" alt="Allwyn" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/hasty.jpg" alt="Hasty" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/030.jpg" alt="Maruti" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/neon.jpg" alt="Neon" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+  </div>
+</div>
+
+
+<div class="max-w-7xl mx-auto p-8 bg-white">
+  
+  <div class="mb-6">
+    <h3 class="text-sm font-bold text-gray-700 tracking-wider uppercase inline-block border-b-2 border-red-500 pb-1">
+
+
+OTHER FIELDS    </h3>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-0 border-l border-t border-gray-300">
+    
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/rotec.jpg" alt="Doctor Seeds" class="max-h-auto w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+    </div>
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/03 (1).jpg" alt="Khedoot" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/bhoomi agro.jpg" alt="Maruti Trailer" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/021.jpg" alt="Allwyn" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/024.jpg" alt="Hasty" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/gold star.jpg" alt="Maruti" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+
+    <div class="group relative flex items-center justify-center p-6 border-r border-b border-gray-300 transition-all duration-300 hover:bg-red-50 cursor-pointer">
+      <img src="/src/bollero.jpg" alt="Neon" class="max-h-auto w-auto object-contain group-hover:scale-105 transition-transform">
+    </div>
+  </div>
+</div>
+<div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

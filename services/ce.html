@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+           <div id="navbar"></div>
+<script>
+  fetch("../navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script> 
+
+<div class="relative w-full h-48 sm:h-56 flex items-center justify-between px-8 md:px-20 overflow-hidden shadow-lg">
+  
+  <img 
+    src="/src/ce.jpg" 
+    alt="Banner Background" 
+    class="absolute inset-0 w-full h-full object-cover z-0"
+  />
+</div>
+ <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-[50px]">
+
+    <!-- LEFT CONTENT -->
+    <div class="md:col-span-2 bg-white p-6 shadow rounded">
+
+      <h2 class="text-xl font-semibold border-b pb-2 mb-4">
+        Trademark Registration
+      </h2>
+
+      <p class="text-gray-700 mb-4">
+        The Trade Marks Registry was established in India in 1940 and presently it administers the Trade Marks Act, 1999 and the rules made thereunder. It acts as a resource and information centre and is a facilitator in matters relating to trademarks in the country.
+      </p>
+
+      <p class="text-gray-700 mb-4">
+        The objective of the Trade Marks Act, 1999 is to register trademarks applied for in the country and to provide better protection of trademarks for goods and services and also to prevent fraudulent use of the mark.
+      </p>
+
+      <p class="text-gray-700 mb-4">
+        Trademarks provide their owners with the legal right to prevent others from using a confusingly similar mark. However, they cannot be used to stop competitors from making the same goods or from selling the same goods or services under a clearly different mark.
+      </p>
+
+      <ul class="list-disc pl-5 space-y-4 text-gray-700">
+        <li>
+          In recent times, much attention has been paid to intellectual property. Trademark is a form of industrial property. It is not designed to protect innovation or creativity, but rather to ensure the integrity of the market by avoiding confusion about the origin of goods.
+        </li>
+
+        <li>
+          It reduces customer confusion and ensures incentives for companies to invest in quality and brand reputation. Consumers form mental associations between trademarks and the goods or services they represent.
+        </li>
+
+        <li>
+          If competitors use a similar mark, it can damage the brand's reputation and cause financial loss. Customers may wrongly assume poor-quality goods are associated with the original trademark owner.
+        </li>
+
+        <li>
+          Without trademark protection, businesses may avoid investing in quality or branding since competitors could easily copy their identity and goodwill.
+        </li>
+
+        <li>
+          Trademark law encourages fair competition and helps businesses build trust, recognition, and long-term value in the marketplace.
+        </li>
+      </ul>
+
+      <h3 class="text-lg font-semibold mt-6 border-b pb-2">
+        Territorial Jurisdictions of TMR Offices
+      </h3>
+
+      <ul class="mt-4 space-y-3 text-gray-700">
+        <li>
+          <strong>MUMBAI:</strong> The State of Maharashtra, Madhya Pradesh, Chhattisgarh and Goa.
+        </li>
+        <li>
+          <strong>AHMEDABAD:</strong> The State of Gujarat and Rajasthan and Union Territories of Daman, Diu, Dadra and Nagar Haveli.
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+    <div id="footer"></div>
+<script>
+  fetch("../footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+    <!-- JS -->
+  <script>
+    const buttons = document.querySelectorAll(".accordion-btn");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+
+        document.querySelectorAll(".accordion-btn + div").forEach(el => {
+          if (el !== content) el.classList.add("hidden");
+        });
+
+        content.classList.toggle("hidden");
+      });
+    });
+  </script>
+</body>
+</html>
