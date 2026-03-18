@@ -15,11 +15,32 @@
 <body>
        <div id="navbar"></div>
 <script>
-  fetch("../navbar.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("navbar").innerHTML = data;
-    });
+ fetch("../navbar.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+
+    // 🔥 IMPORTANT: navbar load pachi JS run karo
+
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (menuBtn) {
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
+
+    const serviceToggle = document.getElementById("serviceToggle");
+    const serviceMenu = document.getElementById("serviceMenu");
+
+    if (serviceToggle) {
+      serviceToggle.addEventListener("click", () => {
+        serviceMenu.classList.toggle("hidden");
+      });
+    }
+
+  });
 </script>
 
 
